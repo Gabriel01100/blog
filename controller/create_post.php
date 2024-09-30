@@ -1,11 +1,7 @@
 <?php
-require 'db.php';
+require '../db.php';
 session_start(); //Mantiene la sesion abierta
-
-if(!isset($_SESSION['usuario_id'])){ 
-    header('Location: login.php');
-    exit();
-}
+require '../model/usuario.php';
 
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
     $title = $_POST['title'];
@@ -15,14 +11,5 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     $sql = "INSERT INTO posts (titulo, contenido, autor_id) VALUES (?, ?, ?)";
     $stmt = $pdo->prepare($sql);
     $stmt->execute([$title, $content, $autor_id]);
-    header("Location: dashboard.php");
+    header("Location: ../view/dashboard.php");
 }
-
-
-
-?>
-<form method="POST">
-    <input type="text" placeholder="title" name="title">
-    <textarea name="content" id="" placeholder="Postea algo"></textarea>
-    <button type="submit">Postear</button>
-</form>

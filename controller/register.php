@@ -1,5 +1,5 @@
 <?php 
-    require 'db.php';
+    require '../db.php';
 
     if ($_SERVER['REQUEST_METHOD'] == 'POST'){
         $nombre_usuario = $_POST['nombre_usuario'];
@@ -11,13 +11,3 @@
 
         echo 'Registro Exitoso';
     }
-
-?>
-
-
-<form method="POST">
-    <input type="text" name="nombre_usuario" placeholder="Nombre de usuario" require>
-    <input type="password" name="contraseña" placeholder="Contraseña" require> 
-    <button type="submit">Registrarse</button>
-</form>
-

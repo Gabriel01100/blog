@@ -2,7 +2,7 @@
 $host = 'localhost';  // El servidor de MySQL
 $db = 'ejercicio1';       // Nombre de la base de datos
 $user = 'root';       // Tu usuario de MySQL (por defecto es 'root')
-$pass = '';           // La contraseña de tu usuario de MySQL (deja vacía si no tienes)
+$pass = '';           // La contraseña de tu usuario de MySQL 
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$db", $user, $pass);
