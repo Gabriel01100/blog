@@ -1,0 +1,6 @@
+body color #fffde2
+
+header color #f7f4cd
+
+etiqueta a color wheat
+

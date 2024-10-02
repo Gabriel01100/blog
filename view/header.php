@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Blog</title>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/dash.css">
+    <link rel="stylesheet" href="../css/create_post.css">
 </head>
 <body>
-    <nav
-        class="nav justify-content-center  "
-    >
-        <a class="nav-link active" href="#" aria-current="page"
-            >Active link</a
-        >
-        <a class="nav-link" href="#">Link</a>
-        <a class="nav-link disabled" href="#">Disabled link</a>
-    </nav>
-    
-
+    <div class="container-all">
+        <header >
+            <nav class="nav-header">
+                <a href="../controller/logout.php">Cerrar sesión</a>
+                <a href="create_post.php">Nueva publicación</a>
+                <a href="#">Contacto</a>
+                <img src="" alt="">
+            </nav>
+        </header>
 
 
 

@@ -1,6 +1,6 @@
 <?php 
     require '../controller/register.php';
-
+    require 'header.php';
 ?>
 
 

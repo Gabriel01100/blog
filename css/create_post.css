@@ -1,0 +1,36 @@
+form{
+    border: 1px solid #000;
+    margin-top: 50px;
+    background: #dfd876;
+}
+
+input, textarea{
+    display: block;
+    margin: 20px 50px;
+    margin-left: 50px;
+    padding: 15px;
+    width: 300px;
+    border-radius: 5px;
+}
+textarea{
+    min-height: 150px;
+    min-width: 550px;
+    max-width: 550px;
+    max-height: 150px;
+}
+
+button{
+    display: block;
+    padding: 8px;
+    margin: 0 auto;
+    width: 100px;
+    background: #f1edb3;
+    transition: .5s;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+button:hover{
+    padding: 10px;
+    border-radius: 10px;
+}

@@ -1,5 +1,6 @@
 <?php
 require '../controller/edit.php';
+require 'header.php';
 ?>
 
 
